@@ -1,11 +1,6 @@
-/*
-    home.css: This website contains selectors only used in home.css
-
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
-.body {
-
-    background-image: url ("https://i.pinimg.com/736x/99/0e/4a/990e4a2514d4c3240a209148a7219bf6.jpg");
+body {
+    background-image: url("https://wallpapers.com/images/hd/pastel-green-aesthetic-laptop-1920-x-1080-zihde6w3albat88l.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }

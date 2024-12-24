@@ -4,7 +4,7 @@ import IMAGE from "../../img/IMAGE.png"; // Asegúrate de que la ruta sea correc
 
 export const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar"style={{backgroundColor:"#F4FBF4"}}>
       <div className="container">
         <img 
           src={IMAGE} 

@@ -1,9 +1,14 @@
 import React from "react";
+import "../../styles/home.css"
+import { Link } from "react-router-dom";
+
+
+
 
 export const Home = () => {
   return (
     <>
-      {/* Navbar */}
+    
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <div className="container-fluid">
           <button
@@ -25,15 +30,15 @@ export const Home = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/servicios">
                   Servicios
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/contact">
                   Contacto
-                </a>
-              </li>
+                </Link>
+                </li>
             </ul>
           </div>
         </div>
@@ -49,13 +54,10 @@ export const Home = () => {
               alt="Evaluación antropométrica"
               style={{
                 objectFit: "cover",
-                height: "60vh", 
-                maxHeight: "500px", 
+                height: "60vh",
+                maxHeight: "500px",
               }}
             />
-            <div className="carousel-caption text-start">
-              <button className="btn btn-success">Leer Más...</button>
-            </div>
           </div>
           <div className="carousel-item">
             <img
@@ -64,8 +66,8 @@ export const Home = () => {
               alt="Plan de Alimentación"
               style={{
                 objectFit: "cover",
-                height: "60vh", 
-                maxHeight: "500px", 
+                height: "60vh",
+                maxHeight: "500px",
               }}
             />
           </div>
@@ -76,8 +78,8 @@ export const Home = () => {
               alt="Aire libre"
               style={{
                 objectFit: "cover",
-                height: "60vh", 
-                maxHeight: "500px", 
+                height: "60vh",
+                maxHeight: "500px",
               }}
             />
           </div>

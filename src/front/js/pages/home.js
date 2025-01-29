@@ -36,7 +36,7 @@ export const Home = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">
-                  Contacto
+                Acerca de mí
                 </Link>
                 </li>
             </ul>

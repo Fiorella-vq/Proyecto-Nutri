@@ -1,49 +1,50 @@
 import React from "react";
+import "../../styles/footer.css";
 
-export const Footer = () => (
-  <footer
-    className="footer mt-auto py-2 text-center"
-    style={{
-      position: "relative",
-      padding: "20px",
-      backgroundColor: "white",
-      color: "black",
-      textAlign: "center",
-    }}
-  >
-    {/* Marca de agua como imagen */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: "0",
-        left: "50%",
-        transform: "translateX(-50%)", 
-        zIndex: -1,
-        opacity: 0.1,
-        backgroundImage: "url('ruta-a-tu-imagen.png')",
-        backgroundSize: "contain",
-        backgroundRepeat: "no-repeat",
-        width: "100%", 
-        height: "100px", 
-      }}
-    ></div>
-    <div>
-    </div>
-    <div className="d-flex flex-wrap justify-content-center">
-      <div className="d-flex align-item-center me-2">
-        <i className="fa-solid fa-user mt-1 me-1" style={{ color: "green" }}></i>
-        <p>Matías Viscardi</p>
-      </div>
+export const Footer = () => {
 
-      <div className="d-flex align-item-center me-2">
-        <i className="fa-brands fa-whatsapp mt-1 me-1" style={{ color: "green" }}></i>
-        <p>095652214587</p>
-      </div>
+  const iniciarAsesoria = () => {
+    window.open("https://wa.me/59896540724", "_blank");
+  };
 
-      <div className="d-flex align-item-center me-2">
-        <i className="fa-brands fa-instagram mt-1 me-1" style={{ color: "green" }}></i>
-        <p>matias_viscardi</p>
+  const abrirOutlook = () => {
+    window.location.href = "mailto:matias.viscardi@gmail.com?subject=Asesoría Nutricional";
+  };
+  
+  const agendaCita = () => {
+    const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cita+con+Matias+Viscardi&details=Agendar+cita+de+nutrición&location=&dates=20250205T140000Z/20250205T150000Z`;
+    window.open(url, '_blank');
+  };
+
+  return (
+    <footer className="footer">
+      <div className="watermark"></div>
+      <div className="contact-container">
+        <div className="contact-info">
+          <p>Lic. en Nutrición Matias Viscardi</p>
+        </div>
+
+        <div className="contact-details">
+          {/* Botón que redirige a WhatsApp */}
+          <button className="floating-button" onClick={iniciarAsesoria}>
+            <img
+              src="https://ariapsa.com/wp-content/uploads/2024/08/ICONO-MINI-Ariapsa-5.png"
+              alt="Icono Ariapsa"
+            />
+            Consultas WhatsApp
+          </button>
+
+          {/* Botón que abre Outlook para enviar un correo */}
+          <button className="outlook-button" onClick={abrirOutlook}>
+            <i className="fa-brands fa-microsoft"></i> Consultas Correo electrónico
+          </button>
+
+          {/* Botón para agendar cita */}
+          <button className="floating-button" onClick={agendaCita}>
+            <i className="fa-solid fa-calendar-check"></i> Agendar cita
+          </button>
+        </div>
       </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};

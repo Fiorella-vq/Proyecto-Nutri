@@ -1,0 +1,88 @@
+.footer {
+    background-color: #f8f9fa; 
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .watermark {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    font-size: 5rem;
+    color: #aaa;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;  
+    width: 100%;
+    flex-wrap: wrap;  
+  }
+  
+  .floating-button,
+  .outlook-button {
+    background-color: #25d366; 
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 30%; 
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .floating-button:hover,
+  .outlook-button:hover {
+    background-color: #128c7e;
+  }
+  
+  .floating-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .outlook-button {
+    background-color: #0078d4; 
+  }
+  
+  .outlook-button:hover {
+    background-color: #005a9e; 
+  }
+  
+  .floating-button .fa-calendar-check,
+  .outlook-button i {
+    font-size: 1.5rem;
+  }
+  
+  /* Ajustes para el tercer botón de Google Calendar */
+  .floating-button:last-child {
+    background-color: #ff6f00; 
+  }
+  
+  .floating-button:last-child:hover {
+    background-color: #e65100; 
+  }
+  
+  .floating-button:last-child .fa-calendar
+  

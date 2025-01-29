@@ -10,7 +10,7 @@ export const Footer = () => {
   const abrirOutlook = () => {
     window.location.href = "mailto:matias.viscardi@gmail.com?subject=Asesoría Nutricional";
   };
-  
+
   const agendaCita = () => {
     const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cita+con+Matias+Viscardi&details=Agendar+cita+de+nutrición&location=&dates=20250205T140000Z/20250205T150000Z`;
     window.open(url, '_blank');
@@ -45,6 +45,11 @@ export const Footer = () => {
           </button>
         </div>
       </div>
+      <div className="hfe-copyright-wrapper">
+        <p>Copyright © 2025 FVQ</p>
+      </div>
+
     </footer>
+
   );
 };
